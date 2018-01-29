@@ -38,4 +38,4 @@ jobs:
       # run tests!
       - run: yarn test
 
-      - run: ./deploy.sh
+      - run: sh ./deploy.sh

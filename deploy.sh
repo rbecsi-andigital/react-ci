@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # more bash-friendly output for jq
 JQ="jq --raw-output --exit-status"
 
