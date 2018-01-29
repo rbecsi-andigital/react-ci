@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    container_name: react-ci
+    build: .
+    ports:
+     - "5000:5000"
+    command: ./node_modules/.bin/serve -s build
