@@ -9,7 +9,7 @@ configure_aws_cli(){
 
 push_ecr_image(){
 	eval $(aws ecr get-login --region eu-west-1 --no-include-email)
-	docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/go-sample-webapp:$CIRCLE_SHA1
+	docker push $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/clippers-quay:$CIRCLE_SHA1
 }
 
 configure_aws_cli
