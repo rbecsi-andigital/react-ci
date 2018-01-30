@@ -26,7 +26,8 @@
     "test": "react-scripts test --env=jsdom --coverage",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "yarn run lint -- --watch",
-    "precommit": "yarn run lint"
+    "precommit": "yarn run lint",
+    "serve": "serve -s ./build"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -5,4 +5,4 @@ services:
     build: .
     ports:
      - "5000:5000"
-    command: ./node_modules/.bin/serve -s build
+    command: yarn serve
