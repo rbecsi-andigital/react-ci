@@ -6,8 +6,6 @@ COPY . .
 
 RUN yarn install
 
-RUN yarn build-css
-
-RUN yarn build-js
+RUN yarn build
 
 EXPOSE 5000
