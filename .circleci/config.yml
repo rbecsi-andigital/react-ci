@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: 794378908588.dkr.ecr.eu-west-1.amazonaws.com/grainger-env
+      - image: $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/grainger-env
         aws_auth:
           aws_access_key_id: $AWS_ACCESS_KEY_ID
           aws_secret_access_key: $AWS_SECRET_ACCESS_KEY
