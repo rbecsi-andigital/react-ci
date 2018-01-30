@@ -47,7 +47,7 @@ deploy_cluster() {
     return 1
 }
 
-make_task_def(){
+create_task_def(){
 	task_template='[
 		{
 			"name": "ClippersQuayWebsiteDev",
