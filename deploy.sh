@@ -10,11 +10,11 @@ configure_aws_cli(){
 push_ecr_image(){
     docker build -t clippers-quay-dev:latest .
 
-    docker tag clippers-quay-dev:latest $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/clippers-quay-dev:$CIRCLE_SHA1
+    docker tag clippers-quay-dev:latest $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/clippers-quay-dev:latest
 
 	eval $(aws ecr get-login --region eu-west-1 --no-include-email)
 
-	docker push $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/clippers-quay-dev:$CIRCLE_SHA1
+	docker push $AWS_ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com/clippers-quay-dev:latest
 }
 
 configure_aws_cli
