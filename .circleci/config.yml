@@ -36,4 +36,4 @@ jobs:
 
       - run: npm run test
 
-      - run: docker images
+      - run: sh ./deploy.sh
