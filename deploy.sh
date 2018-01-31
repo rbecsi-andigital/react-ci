@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # more bash-friendly output for jq
 JQ="jq --raw-output --exit-status"
 
@@ -57,7 +58,7 @@ create_task_def(){
 			"cpu": 0,
 			"portMappings": [
 				{
-                    "hostPort": 0,
+                    "hostPort": 80,
                     "protocol": "tcp",
                     "containerPort": 5000
 				}
